@@ -5,7 +5,7 @@ function App() {
     const [dadosFormulario, setDadosFormulario] = useState({ nome: '', email: '' });
 
     const alterarMudancas = (e) => {
-        setDadosFormulario({ ...dadosFormulario, [e.target.nome]: e.target.value });
+        setDadosFormulario({ ...dadosFormulario, [e.target.name]: e.target.value });
     };
 
     const enviarFormulario = (e) => {
